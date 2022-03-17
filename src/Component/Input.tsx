@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 const Input = () => {
   const classes = useStyles();
   let navigate = useNavigate();
-  const [country, setCountry] = useState(" ");
+  const [country, setCountry] = useState("");
   console.log(country);
 
   return (
@@ -31,7 +31,7 @@ const Input = () => {
         variant="outlined"
         size="medium"
         className={classes.input}
-        onChange={(e) => setCountry(e.target.value)}
+        onChange={(e) => setCountry(e.target.value.trim())}
       />
       <br />
       <br />
@@ -40,7 +40,7 @@ const Input = () => {
         variant="contained"
         disabled={!country}
         onClick={async () => {
-          navigate(`countryDetails/:country`);
+          navigate(`countryDetails/${country}`);
         }}
       >
         Search
