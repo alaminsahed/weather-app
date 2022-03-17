@@ -1,14 +1,16 @@
-import './App.css';
-import Button from '@mui/material/Button';
+import "./App.css";
+import CountryDetails from "./Pages/CountryDetails";
+import Home from "./Pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <h1 className=''>Hello</h1>
-      <Button variant="outlined" disabled>
-  Disabled
-</Button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="countryDetails/:country" element={<CountryDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
