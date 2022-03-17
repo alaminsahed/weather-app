@@ -43,7 +43,7 @@ const Input = () => {
           navigate(`countryDetails/${country}`);
         }}
       >
-        Search
+        Submit
       </Button>
     </div>
   );
