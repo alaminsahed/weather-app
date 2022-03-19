@@ -3,6 +3,7 @@
 ## Technology Used:
 * React.js
 * Material UI
+* Typescript
 
 ## API
 
