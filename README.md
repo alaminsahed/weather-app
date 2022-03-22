@@ -29,4 +29,4 @@ npm install
 npm start
 ```
 
-[Demo](https://nifty-perlman-9b2497.netlify.app)
+
